@@ -36,12 +36,10 @@ nav {
 h1 {
     font-family: 'Oswald' sans-serif;
     text-shadow: 1px 1px 1px $light-blue;
-    flex-wrap: none;
-    // font-family: 'Bebas Neue', cursive;
     
     font-size: 6rem;
     color: #000;
-    // letter-spacing: 1.5px;
+    letter-spacing: 1px;
 }
 
 .headings {
@@ -49,9 +47,7 @@ h1 {
     margin-left: 20px;
 
     p {
-        // color: #000;
         font-size: 2.5rem;
-        // text-align: center;
     }
 }
 
@@ -60,6 +56,7 @@ header {
     background-image: url(../assets/scott-webb-avcrl_kNXrA-unsplash.jpg);
     background-size: cover;
     background-color: $blue;
+    // background-blend-mode: multiply;
     background-blend-mode: lighten;
     display: flex;
     flex-direction: column;
@@ -68,30 +65,33 @@ header {
 
 .info {
     height: 35vh;
-    width: 60%;
+    width: 50%;
+    // padding: 20px;
     letter-spacing: 1px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     background: transparent;
     color: $blue;
+    // border: 5px double $white;
 }
 
 .quote {
     width: 200px;
     padding: 15px 0;
-    border: 2px solid transparent;
+    border: 2px solid $white;
     // border-radius: 8px;
     text-decoration: none;
     color: #fff;
     text-align: center;
-    font-family: "Raleway", sans-serif;
+    font-family: "Oswald", sans-serif;
     // letter-spacing: 1px;
     // font-weight: 700;
     // margin-right: 30px;
     // margin-bottom: 20px;
     transition: all 0.2s ease;
     background: $blue;
+    cursor: pointer;
 
     &:hover, 
     &:focus-within {

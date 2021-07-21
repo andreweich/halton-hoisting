@@ -265,7 +265,7 @@ form {
 }
 
 h2 {
-  font-size: 4.5rem;
+  font-size: 4rem;
 }
 
 h3 {
@@ -342,10 +342,9 @@ nav {
 h1 {
   font-family: "Oswald" sans-serif;
   text-shadow: 1px 1px 1px #0081B7;
-  -ms-flex-wrap: none;
-      flex-wrap: none;
   font-size: 6rem;
   color: #000;
+  letter-spacing: 1px;
 }
 
 .headings {
@@ -376,7 +375,7 @@ header {
 
 .info {
   height: 35vh;
-  width: 60%;
+  width: 50%;
   letter-spacing: 1px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -395,14 +394,15 @@ header {
 .quote {
   width: 200px;
   padding: 15px 0;
-  border: 2px solid transparent;
+  border: 2px solid #F1F6F9;
   text-decoration: none;
   color: #fff;
   text-align: center;
-  font-family: "Raleway", sans-serif;
+  font-family: "Oswald", sans-serif;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   background: #00599a;
+  cursor: pointer;
 }
 .quote:hover, .quote:focus-within {
   border: 2px solid #fff;
