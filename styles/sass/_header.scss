@@ -1,12 +1,17 @@
-nav {
-    background-color: #FFF;
-}
+// nav {
+//     background-color: #FFF;
+//     height: 18vh;
+//     width: 100vw;
+// }
 .navbar {
     height: 18vh;
+    width: 100vw;
+    background-color: #FFF;
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: $blue;
+    
 
     ul {
         display: flex;
@@ -14,8 +19,13 @@ nav {
         
         li {
             margin-left: 30px;
+            border-bottom: 2px solid transparent;
+            &:hover, 
+            &:focus-within {
+                border-bottom: 2px solid $black;
+                transition: all 0.3s ease-in-out;
+            }
         }
-
     }
 }
 
@@ -23,7 +33,6 @@ nav {
     margin-top: 5px;
     min-width: 50%;
     display: flex;
-    // flex-wrap: wrap;
 
     .logo {
         max-width: 60px;
@@ -35,10 +44,9 @@ nav {
 
 h1 {
     font-family: 'Oswald' sans-serif;
-    text-shadow: 1px 1px 1px $light-blue;
-    
+    text-shadow: 1px 1px 1px $baby;
     font-size: 6rem;
-    color: #000;
+    color: $black;
     letter-spacing: 1px;
 }
 
@@ -52,7 +60,7 @@ h1 {
 }
 
 header {
-    height: 70vh;
+    height: 75vh;
     background-image: url(../assets/scott-webb-avcrl_kNXrA-unsplash.jpg);
     background-size: cover;
     background-color: $blue;
@@ -61,34 +69,37 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 20px;
 }
 
 .info {
-    height: 35vh;
+    height: 40vh;
     width: 50%;
-    // padding: 20px;
     letter-spacing: 1px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     background: transparent;
     color: $blue;
-    // border: 5px double $white;
+
+    h3 a:hover, 
+    h3 a:focus-within {
+        color: $baby;
+    }
 }
 
 .quote {
+    display: inline-block;
     width: 200px;
     padding: 15px 0;
-    border: 2px solid $white;
-    // border-radius: 8px;
+    border: 2px solid transparent;
     text-decoration: none;
+    text-transform: uppercase;
     color: #fff;
     text-align: center;
-    font-family: "Oswald", sans-serif;
-    // letter-spacing: 1px;
-    // font-weight: 700;
-    // margin-right: 30px;
-    // margin-bottom: 20px;
+    font-family: "Titillum Web", sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
     transition: all 0.2s ease;
     background: $blue;
     cursor: pointer;
@@ -96,6 +107,6 @@ header {
     &:hover, 
     &:focus-within {
         border: 2px solid #fff;
-        // transform: scale(0.99);
+        transform: scale(0.95);
     }
 }

@@ -1,0 +1,161 @@
+
+.our-company {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+
+.big-box {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 75%;
+    background: $grey;
+    padding: 30px;
+    border-radius: 5px;
+    border: 5px solid $blue;
+
+    p {
+        width: 85%;
+        color: $black;
+        padding: 10px;
+        font-size: 2.3rem;
+    }
+}
+
+.tssa {
+    max-width: 100px;
+    align-self: center;
+}
+
+.flex-icon {
+    background-color: $light-blue;
+    height: 35vh;
+    padding-top: 30px;
+}
+
+.icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+    .icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 3px solid $blue;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        // line-height: 50px;
+        padding: 15px;
+
+        h3 {
+            padding: 30px 0;
+            color: $blue;
+        }
+    }
+    
+}
+
+.icon p {
+    width: 250px;
+    text-align: center;
+    color: $black;
+}
+
+
+.blue {
+    margin: 90px 0;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+
+    .blurb, .photo {
+        width: 45%;
+    }
+}
+
+.blurb {
+    background: $grey;
+    padding: 30px;
+    border-radius: 5px;
+    border: 5px solid $blue;
+    color: $black;
+
+    p {
+        padding-bottom: 30px;
+    }
+}
+
+.photo {
+    align-self: center;
+}
+
+footer {
+    background-color: $blue;
+    color: #FFF;
+    padding: 50px 0 0;
+
+    .footer-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 40vh;
+
+        h3 {
+            color: #FFF;
+            padding-bottom: 30px;
+        }
+    }
+}
+
+.foot-info, .business, .contact-info {
+    width: 30%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-2 {
+    max-width: 150px;
+    min-width: 150px;
+    // align-self: center;
+}
+
+.two {
+    width: 250px;
+    background-color: #FFF;
+    color: $blue;
+}
+
+.contact-info li {
+    padding-bottom: 10px;
+
+    a:hover, 
+    a:focus-within {
+        color: $baby;
+    }
+}
+
+.copyright {
+    text-align: center;
+    background: #fff;
+    color: $blue;
+    margin-top: 50px;
+    font-size: 1.8rem;
+
+    a {
+        color: $baby;
+        font-weight: 700;
+    }
+}

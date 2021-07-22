@@ -241,13 +241,14 @@ html {
 }
 
 body {
-  color: #F1F6F9;
-  font-family: "Quattrocento", serif;
+  color: #00599a;
+  font-family: "Open Sans", sans-serif;
   font-size: 2rem;
+  letter-spacing: 1px;
 }
 
 .wrapper {
-  max-width: 1400px;
+  max-width: 1200px;
   width: 90%;
   margin: 0 auto;
 }
@@ -265,11 +266,11 @@ form {
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 4.5rem;
 }
 
 h3 {
-  color: #000;
+  color: #121212;
   font-size: 3rem;
 }
 
@@ -289,20 +290,19 @@ img {
 
 h1,
 h2,
-h3 {
-  font-family: "Oswald", sans-serif;
+h3,
+h4 {
+  font-family: "Titillium Web", sans-serif;
 }
 
 p {
   line-height: 1.5;
 }
 
-nav {
-  background-color: #FFF;
-}
-
 .navbar {
   height: 18vh;
+  width: 100vw;
+  background-color: #FFF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -322,6 +322,12 @@ nav {
 }
 .navbar ul li {
   margin-left: 30px;
+  border-bottom: 2px solid transparent;
+}
+.navbar ul li:hover, .navbar ul li:focus-within {
+  border-bottom: 2px solid #121212;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .logo-container {
@@ -341,9 +347,9 @@ nav {
 
 h1 {
   font-family: "Oswald" sans-serif;
-  text-shadow: 1px 1px 1px #0081B7;
+  text-shadow: 1px 1px 1px #548AD1;
   font-size: 6rem;
-  color: #000;
+  color: #121212;
   letter-spacing: 1px;
 }
 
@@ -356,7 +362,7 @@ h1 {
 }
 
 header {
-  height: 70vh;
+  height: 75vh;
   background-image: url(../assets/scott-webb-avcrl_kNXrA-unsplash.jpg);
   background-size: cover;
   background-color: #00599a;
@@ -371,10 +377,11 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-bottom: 20px;
 }
 
 .info {
-  height: 35vh;
+  height: 40vh;
   width: 50%;
   letter-spacing: 1px;
   display: -webkit-box;
@@ -390,15 +397,23 @@ header {
   background: transparent;
   color: #00599a;
 }
+.info h3 a:hover,
+.info h3 a:focus-within {
+  color: #548AD1;
+}
 
 .quote {
+  display: inline-block;
   width: 200px;
   padding: 15px 0;
-  border: 2px solid #F1F6F9;
+  border: 2px solid transparent;
   text-decoration: none;
+  text-transform: uppercase;
   color: #fff;
   text-align: center;
-  font-family: "Oswald", sans-serif;
+  font-family: "Titillum Web", sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   background: #00599a;
@@ -406,4 +421,199 @@ header {
 }
 .quote:hover, .quote:focus-within {
   border: 2px solid #fff;
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.our-company {
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+.big-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 75%;
+  background: #F0F0F0;
+  padding: 30px;
+  border-radius: 5px;
+  border: 5px solid #00599a;
+}
+.big-box p {
+  width: 85%;
+  color: #121212;
+  padding: 10px;
+  font-size: 2.3rem;
+}
+
+.tssa {
+  max-width: 100px;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.flex-icon {
+  background-color: #dff1ff;
+  height: 35vh;
+  padding-top: 30px;
+}
+
+.icons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.icons .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 3px solid #00599a;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  padding: 15px;
+}
+.icons .icon h3 {
+  padding: 30px 0;
+  color: #00599a;
+}
+
+.icon p {
+  width: 250px;
+  text-align: center;
+  color: #121212;
+}
+
+.blue {
+  margin: 90px 0;
+}
+
+.main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main-content .blurb, .main-content .photo {
+  width: 45%;
+}
+
+.blurb {
+  background: #F0F0F0;
+  padding: 30px;
+  border-radius: 5px;
+  border: 5px solid #00599a;
+  color: #121212;
+}
+.blurb p {
+  padding-bottom: 30px;
+}
+
+.photo {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+footer {
+  background-color: #00599a;
+  color: #FFF;
+  padding: 50px 0 0;
+}
+footer .footer-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40vh;
+}
+footer .footer-flex h3 {
+  color: #FFF;
+  padding-bottom: 30px;
+}
+
+.foot-info, .business, .contact-info {
+  width: 30%;
+  height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo-2 {
+  max-width: 150px;
+  min-width: 150px;
+}
+
+.two {
+  width: 250px;
+  background-color: #FFF;
+  color: #00599a;
+}
+
+.contact-info li {
+  padding-bottom: 10px;
+}
+.contact-info li a:hover,
+.contact-info li a:focus-within {
+  color: #548AD1;
+}
+
+.copyright {
+  text-align: center;
+  background: #fff;
+  color: #00599a;
+  margin-top: 50px;
+  font-size: 1.8rem;
+}
+.copyright a {
+  color: #548AD1;
+  font-weight: 700;
 }

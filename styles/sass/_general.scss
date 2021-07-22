@@ -10,13 +10,14 @@ html {
 
 body {
     // background: $blue;
-    color: $white;
-    font-family: 'Quattrocento', serif;
+    color: $blue;
+    font-family: 'Open Sans', sans-serif;
     font-size: 2rem;
+    letter-spacing: 1px;
 }
 
 .wrapper {
-    max-width: 1400px;
+    max-width: 1200px;
     width: 90%;
     margin: 0 auto;
 }
@@ -34,11 +35,11 @@ form {
 }
 
 h2 {
-    font-size: 4rem;
+    font-size: 4.5rem;
 }
 
 h3 {
-    color: #000;
+    color: $black;
     font-size: 3rem;
 }
 
@@ -58,10 +59,16 @@ img {
 
 h1,
 h2, 
-h3 {
-    font-family: 'Oswald', sans-serif; 
+h3, 
+h4 {
+    font-family: 'Titillium Web', sans-serif; 
 }
 
 p {
     line-height: 1.5;
 }
+
+// a:hover, 
+// a:focus-within {
+//     color: $baby;
+// }
