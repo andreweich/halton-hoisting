@@ -8,33 +8,83 @@
     <link rel="shortcut icon" href="./assets/HH logo 2 (2).jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Titillium+Web:wght@700&display=swap"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karma&family=Raleway:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
+    
 </head>
 
 <body>
     <nav>
-        <div class="navbar wrapper">
-            <div class="logo-container">
-                <div class="logo">
-                    <img src="./assets/HH logo 2 (2).jpg" alt="Halton Hoisting LTD logo">
+        <div class="navbar">
+            <div class="wrapper nav-flex">
+                <div class="logo-container">
+                    <div class="logo">
+                        <img src="./assets/HH logo 2 (2).jpg" alt="Halton Hoisting LTD logo">
+                    </div>
+                    <div class="headings">
+                        <h1>Halton Hoisting</h1>
+                        <p> <em>Lifting Expectations</em> </p>
+                    </div>
                 </div>
-                <div class="headings">
-                    <h1>Halton Hoisting</h1>
-                    <p> <em>Lifting Expectations</em> </p>
-                </div>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <!-- <li><a href="#our-company">Our Company</a></li> -->
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+                <aside>
+                    <h4>CALL: <a href="tel:905-315-1445">905-315-1445</a></h4>
+                </aside>
             </div>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="#our-company">Our Company</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
         </div>
     </nav>
 
     <main>
+        <nav class="contact-us">
+            <div class="wrapper">
+                <div class="sub-header">
+                    <h2>Contact</h2>
+                </div>
+            </div>
+        </nav>
 
+        <section>
+            <div class="wrapper">
+                <div class="contact-copy">
+                    <h4>Call or Email Us Today to Move Your Project from the Ground Up</h4>
+                    <p>If you would like to receive a quote for renting one of our hoists for your work site, please fill out the form below and identify the following: </p>
+                    <ul>
+                        <li>Expected Start Date</li>
+                        <li>Single or Dual Hoist</li>
+                        <li>End Door, Side Door, No Preference</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="form-container wrapper">
+                <div class="form">
+                    <form name="contact">
+                        <label for="name">Name *</label>
+                        <input type="text" name="name" id="name" class="name"required>
+                
+                        <label for="user-email">Email *</label>
+                        <input type="email" name="user-email" id="user-email" class="email" required>
+
+                        <label for="phone-number">Phone Number *</label>
+                        <input type="text" name="phone-number" id="phone-number" class="number" required>
+                
+                        <label for="message">How Can We Help You? *</label>
+                        <textarea class="textarea-2" id="message" name="message"></textarea required>
+                
+                        <button type="submit" value="Submit" class="quote">Send</button>
+
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -42,20 +92,20 @@
             <div class="foot-info">
                 <h3>Thinking Of Renting?</h3>
                 <div class="quote two">
-                    <a href="./services.html">Get Started Today</a>
+                    <a href="./contact.html">Get Started Today</a>
+                </div>
+                <div class="hours">
+                    <h4>Business Hours</h4>
+                    <ul>
+                        <li>Monday-Friday: 7:00 AM - 4:00 PM</li>
+                        <li>Saturday: Closed</li>
+                        <li>Sunday: Closed</li>
+                    </ul>
                 </div>
             </div>
             <div class="business">
                 <div class="logo-2">
                     <img src="./assets/HH logo font.jpg" alt="Halton Hoisting LTD logo">
-                </div>
-                <div class="hours">
-                    <!-- <h4>Business Hours</h4>
-                            <ul>
-                                <li>Monday-Friday: 7:00 AM - 4:00 PM</li>
-                                <li>Saturday: Closed</li>
-                                <li>Sunday: Closed</li>
-                            </ul> -->
                 </div>
             </div>
             <div class="contact-info">
@@ -68,7 +118,10 @@
             </div>
         </div>
         <div class="copyright">
-            <p><span>&#169;</span> Halton Hoisting Ltd. || Site by <a href="https://andreweichinger.com/">Andrew
-                    Eichinger</a></p>
+            <p><span>&#169;</span> Halton Hoisting Ltd. || Site by <a href="https://andreweichinger.com/">Andrew Eichinger</a></p>
         </div>
     </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>

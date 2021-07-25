@@ -7,25 +7,32 @@
     height: 18vh;
     width: 100vw;
     background-color: #FFF;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: $blue;
     
-
-    ul {
+    .nav-flex {
+        height: 18vh;
         display: flex;
-        padding-top: 20px;
-        
-        li {
-            margin-left: 30px;
-            border-bottom: 2px solid transparent;
-            &:hover, 
-            &:focus-within {
-                border-bottom: 2px solid $black;
-                transition: all 0.3s ease-in-out;
+        align-items: center;
+        justify-content: space-between;
+        color: $blue;
+        position: relative;
+        // flex-wrap: wrap;
+
+        ul {
+            display: flex;
+            padding-top: 20px;
+            
+            li {
+                margin-left: 30px;
+                border-bottom: 2px solid transparent;
+                &:hover, 
+                &:focus-within {
+                    border-bottom: 2px solid $black;
+                    transition: all 0.3s ease-in-out;
+                }
             }
+
         }
+    
     }
 }
 
@@ -40,6 +47,12 @@
         height: 75px;
         align-self: center;
     }
+}
+
+aside {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
 }
 
 h1 {
@@ -73,7 +86,7 @@ header {
 }
 
 .info {
-    height: 40vh;
+    height: 45vh;
     width: 50%;
     letter-spacing: 1px;
     display: flex;

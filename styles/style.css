@@ -242,7 +242,7 @@ html {
 
 body {
   color: #00599a;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Karma", sans-serif;
   font-size: 2rem;
   letter-spacing: 1px;
 }
@@ -251,6 +251,7 @@ body {
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 body,
@@ -292,7 +293,8 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Raleway";
+  letter-spacing: 2px;
 }
 
 p {
@@ -303,6 +305,9 @@ p {
   height: 18vh;
   width: 100vw;
   background-color: #FFF;
+}
+.navbar .nav-flex {
+  height: 18vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -313,18 +318,19 @@ p {
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: #00599a;
+  position: relative;
 }
-.navbar ul {
+.navbar .nav-flex ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-top: 20px;
 }
-.navbar ul li {
+.navbar .nav-flex ul li {
   margin-left: 30px;
   border-bottom: 2px solid transparent;
 }
-.navbar ul li:hover, .navbar ul li:focus-within {
+.navbar .nav-flex ul li:hover, .navbar .nav-flex ul li:focus-within {
   border-bottom: 2px solid #121212;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -343,6 +349,12 @@ p {
   height: 75px;
   -ms-flex-item-align: center;
       align-self: center;
+}
+
+aside {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
 }
 
 h1 {
@@ -381,7 +393,7 @@ header {
 }
 
 .info {
-  height: 40vh;
+  height: 45vh;
   width: 50%;
   letter-spacing: 1px;
   display: -webkit-box;
@@ -426,7 +438,6 @@ header {
 }
 
 .our-company {
-  height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -434,14 +445,13 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 20px;
-  padding-top: 20px;
+  padding: 90px 0 100px;
+}
+.our-company h2 {
+  padding-bottom: 50px;
 }
 
 .big-box {
@@ -451,13 +461,11 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   width: 75%;
   background: #F0F0F0;
   padding: 30px;
-  border-radius: 5px;
-  border: 5px solid #00599a;
+  border: 8px solid #00599a;
+  border-style: double;
 }
 .big-box p {
   width: 85%;
@@ -474,8 +482,8 @@ header {
 
 .flex-icon {
   background-color: #dff1ff;
-  height: 35vh;
-  padding-top: 30px;
+  height: 45vh;
+  padding: 45px 0;
 }
 
 .icons {
@@ -498,14 +506,18 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.icons .icon a {
   border: 3px solid #00599a;
   border-radius: 50%;
   width: 100px;
   height: 100px;
+  line-height: 50px;
   padding: 15px;
 }
-.icons .icon h3 {
-  padding: 30px 0;
+
+.icon h3 {
+  padding: 20px 0;
   color: #00599a;
 }
 
@@ -526,25 +538,47 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
-.main-content .blurb, .main-content .photo {
-  width: 45%;
-}
-
-.blurb {
+.main-content .blurb {
   background: #F0F0F0;
   padding: 30px;
-  border-radius: 5px;
-  border: 5px solid #00599a;
+  margin: 10px;
+  border: 8px solid #00599a;
+  border-style: double;
   color: #121212;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-.blurb p {
-  padding-bottom: 30px;
+.main-content .blurb p {
+  padding-bottom: 60px;
 }
 
-.photo {
+.services {
   -ms-flex-item-align: center;
       align-self: center;
+}
+
+.photo-1, .photo-2 {
+  min-width: 25%;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  height: 500px;
+}
+.photo-1 img, .photo-2 img {
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 footer {
@@ -566,12 +600,11 @@ footer .footer-flex {
 }
 footer .footer-flex h3 {
   color: #FFF;
-  padding-bottom: 30px;
 }
 
 .foot-info, .business, .contact-info {
   width: 30%;
-  height: 30vh;
+  height: 40vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -579,17 +612,22 @@ footer .footer-flex h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.hours h4 {
+  padding-bottom: 10px;
 }
 
 .logo-2 {
   max-width: 150px;
   min-width: 150px;
+  border: 8px solid #FFF;
+  border-style: double;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .two {
@@ -616,4 +654,171 @@ footer .footer-flex h3 {
 .copyright a {
   color: #548AD1;
   font-weight: 700;
+}
+
+.contact-us {
+  background-color: #dff1ff;
+}
+.contact-us .sub-header {
+  padding: 40px 0;
+}
+.contact-us .sub-header h2 {
+  text-align: center;
+}
+
+.contact-copy h4 {
+  padding: 30px 0;
+  font-size: 2.7rem;
+}
+
+.contact-copy p {
+  width: 70%;
+  color: #000;
+  padding-bottom: 20px;
+}
+
+.contact-copy ul {
+  color: #000;
+  list-style: square;
+  padding-left: 4rem;
+}
+
+.form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.form-container .quote {
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-top: 20px;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px 0;
+}
+
+label {
+  margin: 5px;
+  color: #000;
+}
+
+.name,
+.email,
+.number {
+  color: #000;
+  margin: 5px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  border: none;
+  border: 2px solid #548AD1;
+}
+.name:hover, .name:focus-within,
+.email:hover,
+.email:focus-within,
+.number:hover,
+.number:focus-within {
+  background: #F0F0F0;
+}
+
+.textarea-2 {
+  color: #000;
+  height: 200px;
+  margin: 5px;
+  padding: 20px;
+  border: 2px solid #548AD1;
+}
+.textarea-2:hover, .textarea-2:focus-within {
+  background: #F0F0F0;
+}
+
+.slide-container {
+  position: relative;
+  height: 500px;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.slide-image img {
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  padding: 16px;
+  background-color: #F0F0F0;
+  color: #00599a;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 3rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  z-index: 100;
+}
+.prev:hover, .prev:focus-within,
+.next:hover,
+.next:focus-within {
+  background-color: #dff1ff;
+}
+
+.next {
+  right: 5rem;
+}
+
+.prev {
+  left: 5rem;
+}
+
+.navigation-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem 0;
+}
+
+.single-dot {
+  background: #00599a;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  margin: 0 10px;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.single-dot.active {
+  background-color: #dff1ff;
 }

@@ -11,7 +11,7 @@ html {
 body {
     // background: $blue;
     color: $blue;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Karma', sans-serif;
     font-size: 2rem;
     letter-spacing: 1px;
 }
@@ -20,6 +20,7 @@ body {
     max-width: 1200px;
     width: 90%;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 body, 
@@ -61,14 +62,13 @@ h1,
 h2, 
 h3, 
 h4 {
-    font-family: 'Titillium Web', sans-serif; 
+    // font-family: 'Titillium Web', sans-serif; 
+    // font-family: 'Oswald';
+    font-family: 'Raleway';
+    letter-spacing: 2px;
 }
 
 p {
     line-height: 1.5;
 }
 
-// a:hover, 
-// a:focus-within {
-//     color: $baby;
-// }
