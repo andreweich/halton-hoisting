@@ -2,28 +2,24 @@
 //     position: relative;
 // }
 
+.image-gallery {
+    padding-top: 50px;
+    position: relative;
+}
+
 .slide-container {
-    // width: 100%;
     position: relative;
     height: 500px;
-    // position: relative;
-    // margin: auto;
-    // width: 60%;
-    // margin: auto;
-    // border: 5px solid $blue;
     transition: 0.4s ease-in-out;
-    // overflow: hidden;
 }
 
 .slide-image {
     width: 100%;
     height: 100%;
     position: absolute;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
     
     img {
+        width: 100%;
         height: 100%;
         object-fit: contain;
     }

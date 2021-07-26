@@ -301,13 +301,47 @@ p {
   line-height: 1.5;
 }
 
+.sub-menu {
+  display: none;
+}
+
+.open-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 60px 45px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #F0F0F0;
+  color: #00599a;
+  z-index: 100;
+  text-align: center;
+}
+.open-menu ul {
+  margin: 0 auto;
+  font-size: 2.5rem;
+}
+.open-menu ul li {
+  padding: 15px;
+}
+.open-menu ul li:hover, .open-menu ul li:focus-within {
+  background: #dff1ff;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  border-radius: 3px;
+}
+
 .navbar {
-  height: 18vh;
-  width: 100vw;
+  width: 100%;
   background-color: #FFF;
 }
 .navbar .nav-flex {
-  height: 18vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -319,6 +353,7 @@ p {
           justify-content: space-between;
   color: #00599a;
   position: relative;
+  padding: 15px 0;
 }
 .navbar .nav-flex ul {
   display: -webkit-box;
@@ -334,6 +369,21 @@ p {
   border-bottom: 2px solid #121212;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+.hamburger {
+  display: none;
+  font-size: 4rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+.hamburger i {
+  color: #00599a;
+}
+.hamburger i:hover, .hamburger i:focus-within {
+  color: #000;
 }
 
 .logo-container {
@@ -355,6 +405,14 @@ aside {
   position: absolute;
   bottom: 20px;
   right: 0;
+}
+aside a {
+  border-bottom: 2px solid transparent;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+aside a:hover, aside a:focus-within {
+  border-bottom: 2px solid #121212;
 }
 
 h1 {
@@ -746,6 +804,11 @@ label {
   background: #F0F0F0;
 }
 
+.image-gallery {
+  padding-top: 50px;
+  position: relative;
+}
+
 .slide-container {
   position: relative;
   height: 500px;
@@ -759,6 +822,7 @@ label {
   position: absolute;
 }
 .slide-image img {
+  width: 100%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
@@ -821,4 +885,24 @@ label {
 
 .single-dot.active {
   background-color: #dff1ff;
+}
+
+@media (max-width: 948px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .nav-flex ul li {
+    display: none;
+  }
+
+  .hamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 200;
+  }
 }

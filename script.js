@@ -41,6 +41,17 @@
 // });
 
 
+// hamburger
+
+const hamburger = document.querySelector('#hamburger');
+const mobileNav = document.querySelector('#sub-menu');
+
+hamburger.addEventListener('click', function () {
+    mobileNav.classList.toggle('open-menu');
+});
+
+// image gallery 
+
 const slideImage = document.querySelectorAll(".slide-image");
 const slideContainer = document.querySelector(".slide-container");
 const next = document.querySelector(".next");
@@ -126,3 +137,5 @@ function setActiveClass () {
     currentDot.classList.remove("active");
     navDots.children [currentSlide].classList.add("active");
 }
+
+

@@ -1,0 +1,32 @@
+@media(max-width: 948px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .nav-flex ul li{
+        display: none;
+    }
+    
+
+    .hamburger {
+        display: flex;
+        z-index: 200;
+        // position: fixed;
+        // top: 0;
+        // right: 50px;
+        
+    }
+
+
+}
+
+// .hamburger {
+//     display: flex;
+//     position: fixed;
+//     top: 0;
+//     right: 50px;
+//     font-size: 3rem;
+// }
