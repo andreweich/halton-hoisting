@@ -313,8 +313,8 @@ p {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 60px 45px;
-  position: absolute;
-  top: 0;
+  position: fixed;
+  top: 14vh;
   right: 0;
   left: 0;
   bottom: 0;
@@ -322,6 +322,7 @@ p {
   color: #00599a;
   z-index: 100;
   text-align: center;
+  height: 100%;
 }
 .open-menu ul {
   margin: 0 auto;
@@ -495,20 +496,21 @@ header {
           transform: scale(0.95);
 }
 
+.landing h2 {
+  padding: 50px;
+  text-align: center;
+}
+
 .our-company {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 90px 0 100px;
-}
-.our-company h2 {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-bottom: 50px;
 }
 
@@ -519,28 +521,38 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 75%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 65%;
   background: #F0F0F0;
   padding: 30px;
   border: 8px solid #00599a;
   border-style: double;
 }
 .big-box p {
-  width: 85%;
+  width: 90%;
   color: #121212;
   padding: 10px;
   font-size: 2.3rem;
 }
 
+.condo {
+  width: 30%;
+}
+.condo img {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-radius: 3px;
+}
+
 .tssa {
   max-width: 100px;
-  -ms-flex-item-align: center;
-      align-self: center;
 }
 
 .flex-icon {
   background-color: #dff1ff;
-  height: 45vh;
   padding: 45px 0;
 }
 
@@ -552,6 +564,8 @@ header {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .icons .icon {
   display: -webkit-box;
@@ -593,20 +607,19 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 .main-content .blurb {
   background: #F0F0F0;
   padding: 30px;
-  margin: 10px;
   border: 8px solid #00599a;
   border-style: double;
   color: #121212;
-  width: 40%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -619,7 +632,7 @@ header {
           justify-content: center;
 }
 .main-content .blurb p {
-  padding-bottom: 60px;
+  padding-bottom: 40px;
 }
 
 .services {
@@ -628,15 +641,17 @@ header {
 }
 
 .photo-1, .photo-2 {
-  min-width: 25%;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  width: 30%;
   height: 500px;
+  padding-top: 40px;
+  margin: 20px;
 }
 .photo-1 img, .photo-2 img {
-  height: 500px;
+  border-radius: 3px;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 footer {
@@ -689,7 +704,7 @@ footer .footer-flex h3 {
 }
 
 .two {
-  width: 250px;
+  max-width: 250px;
   background-color: #FFF;
   color: #00599a;
 }
@@ -804,6 +819,10 @@ label {
   background: #F0F0F0;
 }
 
+.gallery-box {
+  position: relative;
+}
+
 .image-gallery {
   padding-top: 50px;
   position: relative;
@@ -811,6 +830,7 @@ label {
 
 .slide-container {
   position: relative;
+  margin: 0 auto;
   height: 500px;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
@@ -819,6 +839,7 @@ label {
 .slide-image {
   width: 100%;
   height: 100%;
+  margin: 0 auto;
   position: absolute;
 }
 .slide-image img {
@@ -842,7 +863,7 @@ label {
   font-size: 3rem;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  z-index: 100;
+  z-index: 50;
 }
 .prev:hover, .prev:focus-within,
 .next:hover,
@@ -893,6 +914,11 @@ label {
     top: 0;
     width: 100%;
     overflow: hidden;
+    z-index: 250;
+  }
+
+  header, .contact-us {
+    margin-top: 18vh;
   }
 
   .nav-flex ul li {
@@ -904,5 +930,142 @@ label {
     display: -ms-flexbox;
     display: flex;
     z-index: 200;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  .headings p {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  h4 {
+    font-size: 1.7rem;
+  }
+
+  footer li {
+    font-size: 1.6rem;
+  }
+
+  .contact-copy p {
+    width: 100%;
+  }
+}
+@media (max-width: 832px) {
+  .icon {
+    padding-top: 30px;
+  }
+
+  .big-box p {
+    font-size: 2rem;
+  }
+
+  .blurb p {
+    font-size: 2rem;
+  }
+
+  .quote {
+    font-size: 1.6rem;
+  }
+
+  .our-company {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .main-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .big-box {
+    width: 100%;
+  }
+  .big-box p {
+    width: 100%;
+  }
+
+  .condo {
+    width: 80%;
+    padding: 30px 0;
+  }
+
+  .photo-1, .photo-2 {
+    width: 80%;
+    height: initial;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 750px) {
+  footer {
+    padding: 20px 0 0;
+  }
+  footer .footer-flex {
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .footer-flex h3 {
+    display: none;
+  }
+
+  .foot-info, .contact-info {
+    width: 100%;
+  }
+
+  .logo-2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 10%;
+    min-width: 10%;
+  }
+
+  .business {
+    height: 1px;
+  }
+
+  .copyright {
+    margin-top: 0;
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 570px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  .headings {
+    margin-left: 0;
+  }
+  .headings p {
+    display: none;
+  }
+
+  aside {
+    top: 3px;
+    left: 0;
+  }
+  aside h4 {
+    font-size: 1.2rem;
+  }
+
+  .hamburger {
+    font-size: 3.5rem;
   }
 }

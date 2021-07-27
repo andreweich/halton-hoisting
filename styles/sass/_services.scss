@@ -1,6 +1,6 @@
-// .gallery-box {
-//     position: relative;
-// }
+.gallery-box {
+    position: relative;
+}
 
 .image-gallery {
     padding-top: 50px;
@@ -9,6 +9,7 @@
 
 .slide-container {
     position: relative;
+    margin: 0 auto;
     height: 500px;
     transition: 0.4s ease-in-out;
 }
@@ -16,6 +17,7 @@
 .slide-image {
     width: 100%;
     height: 100%;
+    margin: 0 auto;
     position: absolute;
     
     img {
@@ -38,7 +40,7 @@
     font-weight: bold;
     font-size: 3rem;
     transition: 0.4s;
-    z-index: 100;
+    z-index: 50;
 
     &:hover, 
     &:focus-within {
@@ -76,3 +78,4 @@
 .single-dot.active {
     background-color: $light-blue;
 }
+

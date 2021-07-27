@@ -1,45 +1,53 @@
 
+.landing h2 {
+    padding: 50px;
+    text-align: center;
+}
 .our-company {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 90px 0 100px;
-
-    h2 {
-        padding-bottom: 50px;
-    }
+    justify-content: space-between;
+    padding-bottom: 50px;
 }
 
 
 .big-box {
     display: flex;
     align-items: center;
-    // flex-wrap: wrap;
-    width: 75%;
+    flex-direction: column;
+    width: 65%;
     background: $grey;
     padding: 30px;
-    // border-radius: 5px;
     border: 8px solid $blue;
     border-style: double;
 
+
     p {
-        width: 85%;
+        width: 90%;
         color: $black;
         padding: 10px;
         font-size: 2.3rem;
     }
 }
 
+.condo {
+    width: 30%;
+    // height: 600px;
+    
+    img {
+        box-shadow:rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        border-radius: 3px;
+    }
+}
+
 .tssa {
     max-width: 100px;
-    align-self: center;
 }
 
 // icon styles 
 
 .flex-icon {
     background-color: $light-blue;
-    height: 45vh;
     padding: 45px 0;
 }
 
@@ -47,13 +55,12 @@
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 
     .icon {
         display: flex;
         flex-direction: column;
         align-items: center;
-        // width: 33%;
-        // margin: 10px;
 
         a {
             border: 3px solid $blue;
@@ -85,25 +92,22 @@
 
 .main-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 
     .blurb {
         background: $grey;
         padding: 30px;
-        margin: 10px;
-        // border-radius: 5px;
         border: 8px solid $blue;
         border-style: double;
         color: $black;
-        width: 40%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        // height: 400px;
 
         p {
-            padding-bottom: 60px;
+            padding-bottom: 40px;
         }
     }
 }
@@ -113,13 +117,16 @@
 }
 
 .photo-1, .photo-2 {
-    min-width: 25%;
-    box-shadow:rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    width: 30%;
     height: 500px;
+    padding-top: 40px;
+    margin: 20px;
 
     img {
-        height: 500px;
+        // height: 500px;
+        border-radius: 3px;
         object-fit: cover;
+        box-shadow:rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     }
 }
 
@@ -138,7 +145,6 @@ footer {
 
         h3 {
             color: #FFF;
-            // padding-bottom: 30px;
         }
     }
 }
@@ -165,7 +171,7 @@ footer {
 }
 
 .two {
-    width: 250px;
+    max-width: 250px;
     background-color: #FFF;
     color: $blue;
     // margin-bottom: 20px;

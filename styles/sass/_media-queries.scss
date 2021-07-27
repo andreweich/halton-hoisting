@@ -1,9 +1,19 @@
+@media(max-width: 1100px) {
+
+}
+
 @media(max-width: 948px) {
     .navbar {
         position: fixed;
         top: 0;
         width: 100%;
         overflow: hidden;
+        z-index: 250;
+    }
+
+    header, .contact-us {
+        margin-top: 18vh;
+        // background-position: center;
     }
     
     .nav-flex ul li{
@@ -14,19 +24,156 @@
     .hamburger {
         display: flex;
         z-index: 200;
-        // position: fixed;
-        // top: 0;
-        // right: 50px;
-        
     }
 
+    h1 {
+        font-size: 5rem;
+    }
 
+    .headings p {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    h4 {
+        font-size: 1.7rem;
+    }
+
+    footer li {
+        font-size: 1.6rem;
+    }
+
+    .contact-copy p {
+        width: 100%;
+    }
 }
 
-// .hamburger {
-//     display: flex;
-//     position: fixed;
-//     top: 0;
-//     right: 50px;
-//     font-size: 3rem;
+@media(max-width: 832px) {
+    .icon {
+        padding-top: 30px;
+    }
+
+    .big-box p {
+        font-size: 2rem;
+    }
+
+    .blurb p {
+        font-size: 2rem;
+    }
+
+    .quote {
+        font-size: 1.6rem;
+    }
+
+    .our-company {
+        flex-direction: column;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .big-box {
+        width: 100%;
+
+        p {
+            width: 100%;
+        }
+    }
+
+    .condo {
+        width: 80%;
+        padding: 30px 0;
+    }
+
+    .photo-1, .photo-2 {
+        width: 80%;
+        height: initial;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 750px) {
+    footer {
+        padding: 20px 0 0;
+
+        .footer-flex {
+            position: relative;
+            flex-direction: column;
+            
+            // height: 50vh;
+
+            h3 {
+                display: none;
+            }
+        }
+    }
+
+    .foot-info, .contact-info {
+        width: 100%;
+    }
+
+    .logo-2 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        max-width: 10%;
+        min-width: 10%;
+    }
+
+    .business {
+        height: 1px;
+    }
+
+    .copyright {
+        margin-top: 0;
+        font-size: 1.3rem;
+    }
+}
+
+@media(max-width: 570px) {
+    // header {
+    //     height: 70vh;
+    // }
+    h1 {
+        font-size: 4rem;
+    }
+
+    // h2 {
+    //     font-size: 3rem;
+    // }
+
+    .headings {
+        margin-left: 0;
+        
+        p {
+            display: none;
+        }
+    }
+    
+    aside {
+        top: 3px;
+        left: 0;
+        
+        h4 {
+            font-size: 1.2rem;
+        }
+    }
+
+    .hamburger {
+        font-size: 3.5rem;
+    }
+}
+
+// @media(max-width: 460px) {
+//     .contact-us {
+//         margin-top: 18vh;
+//     }
 // }

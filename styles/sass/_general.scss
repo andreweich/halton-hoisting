@@ -62,8 +62,6 @@ h1,
 h2, 
 h3, 
 h4 {
-    // font-family: 'Titillium Web', sans-serif; 
-    // font-family: 'Oswald';
     font-family: 'Raleway';
     letter-spacing: 2px;
 }
@@ -84,8 +82,8 @@ p {
     display: flex;
     justify-content: space-between;
     padding: 60px 45px;
-    position: absolute;
-    top: 0;
+    position: fixed;
+    top: 14vh;
     right: 0;
     left: 0;
     bottom: 0;
@@ -93,6 +91,7 @@ p {
     color: $blue;
     z-index: 100;
     text-align: center;
+    height: 100%;
 
     ul {
         margin: 0 auto;
