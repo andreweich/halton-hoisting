@@ -4,14 +4,12 @@
     background-color: #FFF;
     
     .nav-flex {
-        // height: 18vh;
         display: flex;
         align-items: center;
         justify-content: space-between;
         color: $blue;
         position: relative;
         padding: 15px 0;
-        // flex-wrap: wrap;
 
         ul {
             display: flex;
@@ -26,9 +24,7 @@
                     transition: all 0.3s ease-in-out;
                 }
             }
-
         }
-    
     }
 }
 
@@ -106,7 +102,6 @@ header {
     padding-bottom: 20px;
 }
 
-
 .info {
     height: 45vh;
     width: 50%;
@@ -116,7 +111,6 @@ header {
     justify-content: space-evenly;
     background: transparent;
     color: $blue;
-    // padding-top: 60px;
 
     h3 a:hover, 
     h3 a:focus-within {
