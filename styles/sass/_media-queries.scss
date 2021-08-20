@@ -1,5 +1,10 @@
+@media(max-width: 1076px) {
+    h1 {
+        font-size: 5rem;
+    }
+}
 
-@media(max-width: 948px) {
+@media(max-width: 971px) {
     .navbar {
         position: fixed;
         top: 0;
@@ -19,6 +24,15 @@
     .hamburger {
         display: flex;
         z-index: 200;
+    }
+
+    aside {
+        top: 10px;
+        left: 0;
+        
+        h4 {
+            font-size: 1.2rem;
+        }
     }
 
     h1 {
@@ -144,14 +158,14 @@
         }
     }
     
-    aside {
-        top: 3px;
-        left: 0;
+    // aside {
+    //     top: 3px;
+    //     left: 0;
         
-        h4 {
-            font-size: 1.2rem;
-        }
-    }
+    //     h4 {
+    //         font-size: 1.2rem;
+    //     }
+    // }
 
     .hamburger {
         font-size: 3.5rem;
