@@ -388,7 +388,7 @@ p {
 }
 
 .logo-container {
-  margin-top: 5px;
+  margin: 10px 0;
   min-width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -695,8 +695,8 @@ footer .footer-flex h3 {
 }
 
 .logo-2 {
-  max-width: 150px;
-  min-width: 150px;
+  max-width: 200px;
+  min-width: 200px;
   border: 8px solid #FFF;
   border-style: double;
   -ms-flex-item-align: center;
@@ -908,7 +908,12 @@ label {
   background-color: #dff1ff;
 }
 
-@media (max-width: 948px) {
+@media (max-width: 1076px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 971px) {
   .navbar {
     position: fixed;
     top: 0;
@@ -930,6 +935,14 @@ label {
     display: -ms-flexbox;
     display: flex;
     z-index: 200;
+  }
+
+  aside {
+    top: 10px;
+    left: 0;
+  }
+  aside h4 {
+    font-size: 1.2rem;
   }
 
   h1 {
@@ -1055,20 +1068,6 @@ label {
   }
   .headings p {
     display: none;
-  }
-
-  aside {
-    top: 3px;
-    left: 0;
-  }
-  aside h4 {
-    font-size: 1.2rem;
-  }
-
-  .hamburger {
-    font-size: 3.5rem;
-  }
-}display: none;
   }
 
   .hamburger {
