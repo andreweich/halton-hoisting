@@ -1,142 +1,141 @@
-
 .navbar {
-    width: 100%;
-    background-color: #FFF;
-    
-    .nav-flex {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        color: $blue;
-        position: relative;
-        padding: 15px 0;
+  width: 100%;
+  background-color: #fff;
 
-        ul {
-            display: flex;
-            padding-top: 20px;
-            
-            li {
-                margin-left: 30px;
-                border-bottom: 2px solid transparent;
-                &:hover, 
-                &:focus-within {
-                    border-bottom: 2px solid $black;
-                    transition: all 0.3s ease-in-out;
-                }
-            }
+  .nav-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $blue;
+    position: relative;
+    padding: 15px 0;
+
+    ul {
+      display: flex;
+      padding-top: 20px;
+
+      li {
+        margin-left: 30px;
+        border-bottom: 2px solid transparent;
+        &:hover,
+        &:focus-within {
+          border-bottom: 2px solid $black;
+          transition: all 0.3s ease-in-out;
         }
+      }
     }
+  }
 }
 
 .hamburger {
-    display: none;
-    font-size: 4rem;
-    justify-content: center;
-    cursor: pointer;
+  display: none;
+  font-size: 4rem;
+  justify-content: center;
+  cursor: pointer;
 
-    i {
-        color: $blue;
+  i {
+    color: $blue;
 
-        &:hover,
-        &:focus-within {
-            color: #000;
-        }
+    &:hover,
+    &:focus-within {
+      color: #000;
     }
+  }
 }
 
 .logo-container {
-    margin: 10px 0;
-    min-width: 50%;
-    display: flex;
+  margin: 10px 0;
+  min-width: 50%;
+  display: flex;
 
-    .logo {
-        max-width: 60px;
-        min-width: 60px;
-        height: 75px;
-        align-self: center;
-    }
+  .logo {
+    max-width: 60px;
+    min-width: 60px;
+    height: 75px;
+    align-self: center;
+  }
 }
 
 aside {
-    position: absolute;
-    bottom: 20px;
-    right: 0;
+  position: absolute;
+  bottom: 20px;
+  right: 0;
 
-    a {
-        border-bottom: 2px solid transparent;
-        transition: 0.2s ease-in-out;
-    
-        &:hover, 
-        &:focus-within {
-            border-bottom: 2px solid $black;;
-        }
+  a {
+    border-bottom: 2px solid transparent;
+    transition: 0.2s ease-in-out;
+
+    &:hover,
+    &:focus-within {
+      border-bottom: 2px solid $black;
     }
+  }
 }
 
 h1 {
-    font-family: 'Oswald' sans-serif;
-    text-shadow: 1px 1px 1px $baby;
-    font-size: 6rem;
-    color: $black;
-    letter-spacing: 1px;
+  font-family: "Oswald" sans-serif;
+  text-shadow: 1px 1px 1px $baby;
+  font-size: 6rem;
+  color: $black;
+  letter-spacing: 1px;
 }
 
 .headings {
-    margin-top: 20px;
-    margin-left: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
 
-    p {
-        font-size: 2.5rem;
-    }
+  p {
+    font-size: 2.5rem;
+  }
 }
 
 header {
-    height: 75vh;
-    background-image: url(../assets/scott-webb-avcrl_kNXrA-unsplash.jpg);
-    background-size: cover;
-    background-color: $blue;
-    background-blend-mode: lighten;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-bottom: 20px;
+  height: 75vh;
+  background-image: url(../assets/scott-webb-avcrl_kNXrA-unsplash.jpg);
+  background-size: cover;
+  background-color: $blue;
+  background-blend-mode: lighten;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 20px;
 }
 
 .info {
-    height: 45vh;
-    width: 50%;
-    letter-spacing: 1px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    background: transparent;
-    color: $blue;
+  height: 45vh;
+  width: 65%;
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: transparent;
+  color: $blue;
 
-    h3 a:hover, 
-    h3 a:focus-within {
-        color: $baby;
-    }
+  h3 a:hover,
+  h3 a:focus-within {
+    color: $baby;
+  }
 }
 
 .quote {
-    display: inline-block;
-    width: 200px;
-    padding: 15px 0;
-    border: 2px solid transparent;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #fff;
-    text-align: center;
-    font-family: "Titillum Web", sans-serif;
-    font-weight: 700;
-    font-size: 1.8rem;
-    transition: all 0.2s ease;
-    background: $blue;
-    cursor: pointer;
+  display: inline-block;
+  width: 200px;
+  padding: 15px 0;
+  border: 2px solid transparent;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-family: "Titillum Web", sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  transition: all 0.2s ease;
+  background: $blue;
+  cursor: pointer;
 
-    &:hover, 
-    &:focus-within {
-        border: 2px solid #fff;
-        transform: scale(0.95);
-    }
+  &:hover,
+  &:focus-within {
+    border: 2px solid #fff;
+    transform: scale(0.95);
+  }
 }

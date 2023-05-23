@@ -340,7 +340,7 @@ p {
 
 .navbar {
   width: 100%;
-  background-color: #FFF;
+  background-color: #fff;
 }
 .navbar .nav-flex {
   display: -webkit-box;
@@ -453,7 +453,7 @@ header {
 
 .info {
   height: 45vh;
-  width: 50%;
+  width: 65%;
   letter-spacing: 1px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -918,22 +918,18 @@ label {
     overflow: hidden;
     z-index: 250;
   }
-
   header, .contact-us {
     margin-top: 14vh;
   }
-
   .nav-flex ul li {
     display: none;
   }
-
   .hamburger {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     z-index: 200;
   }
-
   aside {
     top: 10px;
     left: 0;
@@ -941,31 +937,24 @@ label {
   aside h4 {
     font-size: 1.2rem;
   }
-
   h1 {
     font-size: 5rem;
   }
-
   .headings p {
     font-size: 2rem;
   }
-
   h2 {
     font-size: 3.5rem;
   }
-
   h3 {
     font-size: 2.5rem;
   }
-
   h4 {
     font-size: 1.7rem;
   }
-
   footer li {
     font-size: 1.6rem;
   }
-
   .contact-copy p {
     width: 100%;
   }
@@ -974,45 +963,37 @@ label {
   .icon {
     padding-top: 30px;
   }
-
   .big-box p {
     font-size: 2rem;
   }
-
   .blurb p {
     font-size: 2rem;
   }
-
   .quote {
     font-size: 1.6rem;
   }
-
   .our-company {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-
   .main-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-
   .big-box {
     width: 100%;
   }
   .big-box p {
     width: 100%;
   }
-
   .condo {
     width: 80%;
     padding: 30px 0;
   }
-
   .photo-1, .photo-2 {
     width: 80%;
     height: initial;
@@ -1033,11 +1014,9 @@ label {
   footer .footer-flex h3 {
     display: none;
   }
-
   .foot-info, .contact-info {
     width: 100%;
   }
-
   .logo-2 {
     position: absolute;
     top: 0;
@@ -1045,11 +1024,9 @@ label {
     max-width: 20%;
     min-width: 10%;
   }
-
   .business {
     height: 1px;
   }
-
   .copyright {
     margin-top: 0;
     font-size: 1.3rem;
@@ -1059,14 +1036,12 @@ label {
   h1 {
     font-size: 3.5rem;
   }
-
   .headings {
     margin-left: 0;
   }
   .headings p {
     display: none;
   }
-
   .hamburger {
     font-size: 3.5rem;
   }
